@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>API Problem</title>
+</head>
+
+<body class="py-10">
+    <header>
+        <h1 class="text-2xl font-bold text-center">API Problem: Task-4</h1>
+    </header>
+    <main class="mx-10 my-10">
+        <section class="flex justify-center items-center bg-emerald-300 py-2 px-4">
+            <h1 class="text-2xl font-bold text-center">Link Shortener</h1>
+        </section>
+        <section id="r" class="flex justify-center my-20">
+            <div class="form-control w-4/5">
+                <div class="flex gap-2">
+                    <input id="input-field" type="text" placeholder="Shorten a link here..."
+                        class="input input-bordered rounded-md w-4/5" />
+                    <button onclick="getInput()" class="btn rounded-lg normal-case w-1/5">
+                        Shorten It!
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="flex justify-center items-center flex-col gap-4">
+            <div class="flex justify-between items-center gap-4">
+                <p class="font-bold">Your shortened Link:</p>
+                <p id="short-link"></p>
+                <button id="copy-short-link" class="btn">Copy</button>
+            </div>
+            <button id="more-btn" class="btn">See More Links</button>
+            <div>
+                <div class="flex justify-between items-center gap-4">
+                    <p class="font-bold">Short Link 2:</p>
+                    <p id="short-link2"></p>
+                    <button id="copy-short-link2" class="btn">Copy</button>
+                </div>
+                <div class="flex justify-between items-center gap-4 mt-4">
+                    <p class="font-bold">Short Link 3:</p>
+                    <p id="short-link3"></p>
+                    <button id="copy-short-link3" class="btn">Copy</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/prob4.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b6e09818c5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

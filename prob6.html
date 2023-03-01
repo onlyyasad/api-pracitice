@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>API Problem</title>
+</head>
+
+<body>
+    <header class="my-4">
+        <h1 class="text-2xl font-bold text-center">API Problem: Task-6</h1>
+    </header>
+    <main class="lg:mx-10 lg:my-10">
+        <section class="flex justify-center items-center">
+            <div class="flex flex-col md:flex-row justify-between items-center bg-emerald-400 py-2 px-4 w-full lg:w-1/2 gap-2">
+                <h1 class="text-2xl font-bold text-center">Dictionary</h1>
+                <div class="flex justify-between gap-2">
+                    <input class="px-4 rounded-md" type="text" name="" id="input-word" placeholder="Type Word">
+                    <button onclick="getInput()" class="btn normal-case">Search</button>
+                </div>
+            </div>
+        </section>
+        <section class="flex justify-center items-center">
+            <div id="details" class="bg-emerald-300 p-10 w-full lg:w-1/2 flex flex-col gap-4 hidden">
+                <div class="flex justify-between">
+                    <div>
+                        <div>
+                            <h1 id="word" class="text-2xl font-bold font-serif">Keyboard</h1>
+                        </div>
+                        <div>
+                            <p id="phonetic" class="">Pronunce</p>
+                        </div>
+                    </div>
+                    <div>
+                        <audio id="audio">
+                        </audio>
+                        <button onclick="playAudio()" class="btn h-14 w-14 rounded-full"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                </div>
+                <div id="parent" class="flex flex-col gap-4">
+                    <!-- <div class="flex flex-col gap-4">
+                        <div class="flex justify-between items-center gap-2">
+                            <p class="font-semibold font-serif">noun</p>
+                            <div class="bg-emerald-400 h-[2px] mt-1 w-full"></div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <p class="font-semibold">Meaning</p>
+                            <ul id="${}li-container" class="flex flex-col gap-2 list-disc pl-8">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse culpa sint totam molestias
+                                    vitae enim sapiente sit, saepe voluptatum beatae?</li>
+                                    <p id="example">I am for example</p>
+                            </ul>
+                        </div>
+                        <div class="flex gap-2">
+                            <p class="font-semibold">Synonyms</p>
+                            <p>electronic keyboard</p>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="flex gap-4">
+                    <p class="font-semibold">Source</p><a id="source" target="_blank"></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/prob6.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b6e09818c5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

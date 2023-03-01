@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>API Problem</title>
+</head>
+
+<body class="py-10">
+    <header>
+        <h1 class="text-2xl font-bold text-center">API Problem: Task-5</h1>
+    </header>
+    <main class="mx-10 my-10">
+        <section class="flex justify-between items-center bg-emerald-300 py-2 px-4">
+            <div>
+                <h1 class="text-2xl font-bold ">Advice</h1>
+            </div>
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn m-1 gap-2 normal-case">
+                    <p>Filter by Region</p><i class="fa-solid fa-angle-down"></i>
+                </label>
+                <ul tabindex="0" id="region-container"
+                    class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Asia</a></li>
+                    <li><a>Africa</a></li>
+                    <li><a>Europe</a></li>
+                    <li><a>North America</a></li>
+                    <li><a>South America</a></li>
+                    <li><a>Oceania</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="card-container" class="flex justify-center my-4">
+            <div class="card w-96 bg-primary text-primary-content">
+                <div class="card-body text-center">
+                    <h2 class="card-title justify-center font-normal text-md">Advice # <span id="advice-id"></span></h2>
+                    <blockquote id="advice" class="font-bold text-lg"></blockquote>
+                    <div class="card-actions justify-center">
+                        <button class="btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/prob5.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b6e09818c5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
